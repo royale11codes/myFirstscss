@@ -1,0 +1,82 @@
+@import 'config';
+@import 'utility';
+@import 'buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    
+    
+}
+
+.showcase{
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    height: 600px;
+    
+    a{
+    
+        color: set-text-color($primary-color);
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px 50px 10px ;
+        
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+
+            li{
+                margin: 0px 20px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    a:hover{
+        color: $secondary-color;
+    }
+    a{
+        color: #fff;
+    }
+    &-content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div a{
+    
+            color: set-text-color($primary-color);
+        }
+    }
+    img{
+        width: 50%;
+    }
+    h1{
+       
+        line-height: 1.2;
+    }
+    p{
+        margin: 20px 0px;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+
